@@ -1,0 +1,4 @@
+#include "main/DfcBlockChainCoreVersion.h"
+
+const std::string DFCBlockChain_CORE_VERSION = "%%VERSION%%";
+
