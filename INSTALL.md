@@ -4,12 +4,12 @@ These are instructions for building dfc-core from source.
 
 For a potentially quicker set up, the following projects could be good alternatives:
 
-* dfc-core in a [docker container](https://github.com/dfc/docker-dfc-core-horizon)
-* pre-compiled [packages](https://github.com/dfc/packages)
+* dfc-core in a [docker container](https://github.com/dfc-cash/docker-dfc-core-horizon)
+* pre-compiled [packages](https://github.com/dfc-cash/packages)
 
 ## Picking a version to run
 
-Best is to use the latest *stable* release that can be downloaded from https://github.com/dfc/dfc-core/releases
+Best is to use the latest *stable* release that can be downloaded from https://github.com/dfc-cash/dfc-core/releases
 
 
 Alternatively, branches are organized in the following way:
@@ -95,7 +95,7 @@ See [INSTALL-Windows.md](INSTALL-Windows.md)
 
 ## Basic Installation
 
-- `git clone https://github.com/dfc/dfc-core.git`
+- `git clone https://github.com/dfc-cash/dfc-core.git`
 - `cd dfc-core`
 - `git submodule init`
 - `git submodule update`
@@ -122,6 +122,6 @@ Here are sample steps to achieve this:
     export CXX=clang++-5.0
     export CFLAGS="-O3 -g1 -fno-omit-frame-pointer"
     export CXXFLAGS="$CFLAGS -stdlib=libc++ -isystem /usr/include/libcxxabi"
-    git clone https://github.com/dfc/dfc-core.git
+    git clone https://github.com/dfc-cash/dfc-core.git
     cd dfc-core/
     ./autogen.sh && ./configure && make -j6
