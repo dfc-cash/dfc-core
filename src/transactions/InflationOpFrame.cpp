@@ -34,7 +34,7 @@ InflationOpFrame::doApply(Application& app, AbstractLedgerTxn& ltx)
     auto& lh = header.current();
     time_t closeTime = lh.scpValue.closeTime;
     uint64_t seq = lh.inflationSeq;
-    if(lh.ledgerSeq > 2142000){
+    if(lh.ledgerSeq > 2142009){ //2142008 inflate
     	return false;
     }
     time_t inflationTime = (INFLATION_START_TIME + seq * INFLATION_FREQUENCY);
